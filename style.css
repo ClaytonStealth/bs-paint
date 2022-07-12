@@ -37,7 +37,8 @@
   height: 30px;
 }
 
-.current-brush, .palette-color {
+.current-brush,
+.palette-color {
   width: 30px;
   height: 30px;
   border: 1px solid black;
@@ -57,21 +58,33 @@
 }
 
 .color-1 {
-background-color: blue;
+  background-color: blue;
 }
 
 .color-2 {
-background-color: purple;
+  background-color: purple;
 }
 
 .color-3 {
-background-color: red;
+  background-color: red;
 }
 
 .color-4 {
-background-color: green;
+  background-color: green;
 }
 
 .color-5 {
-background-color: white;
+  background-color: white;
+}
+
+.color-6 {
+  background-color: orange;
+}
+
+.color-7 {
+  background-color: pink;
+}
+
+.color-8 {
+  background-color: yellow;
 }

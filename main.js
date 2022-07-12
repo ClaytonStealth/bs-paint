@@ -50,6 +50,10 @@ let brush = document.querySelector('.current-brush');
 let canvasColor = document.querySelectorAll('.canvas div');
 
 let app = document.querySelector('.app');
+let darkButton = document.querySelector('#darkMode');
+let headings = document.querySelector('.headings');
+let h3 = document.querySelector("h3");
+let msgArea = document.querySelector('.message');
 // Add queries for all your squares, palette colors, and brush here.
 // (Note the singular or plural used in that sentence!)
 
@@ -111,6 +115,18 @@ mouseDown = false;
 console.log(`mousedown: ${mouseDown}`);
 });
 
+darkButton.addEventListener('click', function (){
+  if ( app.style.backgroundColor !== 'black'){
+    app.style.backgroundColor = 'black';
+    msgArea.style.backgroundColor = 'aqua';
+    h3.style.backgroundColor = 'aqua';
+  } else {
+    app.style.backgroundColor = '';
+    headings.style.backgroundColor = '';
+    msgArea.style.backgroundColor = '';
+    h3.style.backgroundColor = '';
+  }
+})
 
 // Now add some functions to handle clicking one particular square
 // and clicking one particular palette color. You can leave them
